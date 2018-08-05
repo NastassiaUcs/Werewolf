@@ -280,6 +280,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Config\Config.csproj">
+      <Project>{fcd974af-3fc3-43cb-a95f-f965c8e36a79}</Project>
+      <Name>Config</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Database\Database.csproj">
       <Project>{a5e58eab-3171-4859-8fd5-d61e78cbdc93}</Project>
       <Name>Database</Name>

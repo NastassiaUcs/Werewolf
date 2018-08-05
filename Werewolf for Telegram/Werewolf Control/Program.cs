@@ -80,7 +80,7 @@ namespace Werewolf_Control
 
             //initialize analytics
 #if BETA || DEBUG
-            var aToken = Helpers.RegHelper.GetRegValue("BotanBetaAPI");
+            var aToken = Config.Config.GetBotApiKey();
 #else
             var aToken = Helpers.RegHelper.GetRegValue("BotanReleaseAPI");
 #endif

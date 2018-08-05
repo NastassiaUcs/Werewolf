@@ -83,7 +83,7 @@ namespace Werewolf_Node
                         .OpenSubKey("SOFTWARE\\Werewolf");
 
 #if BETA || DEBUG
-            var aToken = key.GetValue("BotanBetaAPI").ToString();
+            var aToken = Config.Config.GetBotApiKey();
 #else
             var aToken = key.GetValue("BotanReleaseAPI").ToString();
 #endif

@@ -207,7 +207,6 @@
     <Compile Include="RefreshDate.cs">
       <DependentUpon>WerewolfModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="RegHelper.cs" />
     <Compile Include="v_GroupRanking.cs">
       <DependentUpon>WerewolfModel.tt</DependentUpon>
     </Compile>
@@ -270,6 +269,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Config\Config.csproj">
+      <Project>{fcd974af-3fc3-43cb-a95f-f965c8e36a79}</Project>
+      <Name>Config</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -6,6 +6,8 @@
 //     Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using System.Configuration;
 using Microsoft.Win32;
 namespace Database
 {
@@ -18,7 +20,7 @@ namespace Database
     public partial class WWContext : DbContext
     {
         public WWContext()
-            : base(RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64).OpenSubKey("SOFTWARE\\Werewolf").GetValue("BotConnectionString").ToString())
+            : base(Config.Config.GetConnectionString())
         {
         }
     
